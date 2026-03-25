@@ -1,26 +1,186 @@
 @import "tailwindcss";
+@import "swiper/css/bundle";
+@import "swiper/css/effect-fade";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --animate-slide-in: slide-in-scale 0.3s ease-out;
+
+  @keyframes slide-in-scale {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  --color-navy: #357c8f; /* darkest text / hero heading contrast  */
+  --color-navy2: #f0f4f8; /* card surface background               */
+  --color-steel: #229bb3; /* mid accent                            */
+  --color-gold: #229bb3; /* primary accent (CTA, borders, icons)  */
+  --color-gold2: #79bfd8; /* hover / lighter accent                */
+  --color-silver: #436574; /* secondary / muted text                */
+  --color-muted: #436574; /* body paragraph text                   */
+  --color-light: #f0f4f8; /* section wash / stripe backgrounds     */
+  --color-offwhite: #ffffff; /* headings on dark sections, white fill */
+
+  --animate-fade-up: fadeUp 0.7s ease both;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes scaleX-in {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #40916c -78.47%,
+    #11101d 91.61%
+  );
+
+  --light-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #40916c 8.47%,
+    #000000 101.61%
+  );
+
+  --lighter-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #40916c 8.47%,
+    #000000 121.61%
+  );
+
+  --shadow-box: inset 0px -150px 100px 0px rgba(0, 0, 0, 0.4);
+}
+
+.lightgradient {
+  background: var(--light-gradient);
+}
+
+/* html, body {
+      scroll-behavior: smooth;
+      
+} */
+
+.automation {
+  background-color: #ffffff;
+  color: #436574;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* noise texture overlay */
+.automation::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.35;
+}
+
+/* service card hover border animation */
+.service-card-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.service-card-border:hover::before {
+  transform: scaleX(1);
+}
+
+/* process line */
+.process-line::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--color-gold) 0%,
+    rgba(201, 168, 76, 0.1) 100%
+  );
+}
+
+/* hero animation delays */
+.animate-fade-up {
+  animation: fadeUp 0.7s ease both;
+}
+.delay-100 {
+  animation-delay: 0.1s;
+}
+.delay-250 {
+  animation-delay: 0.25s;
+}
+.delay-400 {
+  animation-delay: 0.4s;
+}
+.delay-550 {
+  animation-delay: 0.55s;
+}
+
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+  background-color: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.whatsapp-bubble:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.overflow {
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

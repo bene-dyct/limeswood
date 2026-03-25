@@ -1,0 +1,181 @@
+.wrapper1{
+    margin-inline: auto;
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    
+}
+
+.wrapper1mobile{
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1) 5%,
+        rgba(0,0,0,1) 95%,
+        rgba(0,0,0,0) 
+    );
+}
+
+@keyframes scrollleft {
+    
+    to {
+        left: -200px;
+    }
+}
+
+.item1 {
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    left: max(calc(160px * 17), 100%);
+    animation-name: scrollleft;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1mobile {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: max(calc(100px * 17), 100%);
+    animation-name: scrollleft;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item11 {
+    animation-delay: calc(50s / 17 * (17 - 1) * -1);
+}
+
+.item12 {
+    animation-delay: calc(50s / 17 * (17 - 2) * -1);
+}
+
+.item13 {
+    animation-delay: calc(50s / 17 * (17 - 3) * -1);
+}
+
+.item14 {
+    animation-delay: calc(50s / 17 * (17 - 4) * -1);
+}
+
+.item15 {
+    animation-delay: calc(50s / 17 * (17 - 5) * -1);
+}
+
+.item16 {
+    animation-delay: calc(50s / 17 * (17 - 6) * -1);
+}
+
+.item17 {
+    animation-delay: calc(50s / 17 * (17 - 7) * -1);
+}
+
+.item18 {
+    animation-delay: calc(50s / 17 * (17 - 8) * -1);
+}
+
+.item19 {
+    animation-delay: calc(50s / 17 * (17 - 9) * -1);
+}
+
+.item200 {
+    animation-delay: calc(50s / 17 * (17 - 10) * -1);
+}
+
+.item201 {
+    animation-delay: calc(50s / 17 * (17 - 11) * -1);
+}
+
+.item202 {
+    animation-delay: calc(50s / 17 * (17 - 12) * -1);
+}
+
+.item203 {
+    animation-delay: calc(50s / 17 * (17 - 13) * -1);
+}
+
+.item204 {
+    animation-delay: calc(50s / 17 * (17 - 14) * -1);
+}
+
+.item205 {
+    animation-delay: calc(50s / 17 * (17 - 15) * -1);
+}
+
+.item206 {
+    animation-delay: calc(50s / 17 * (17 - 16) * -1);
+}
+
+.item207 {
+    animation-delay: calc(50s / 17 * (17 - 17) * -1);
+}
+
+.item2 {
+    width: 120px;
+    height: 90px;
+    position: absolute;
+    left: max(calc(160px * 13), 100%);
+    animation-name: scrollleft;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item21 {
+    animation-delay: calc(50s / 13 * (13 - 1) * -1);
+}
+
+.item22 {
+    animation-delay: calc(50s / 13 * (13 - 2) * -1);
+}
+
+.item23 {
+    animation-delay: calc(50s / 13 * (13 - 3) * -1);
+}
+
+.item24 {
+    animation-delay: calc(50s / 13 * (13 - 4) * -1);
+}
+
+.item25 {
+    animation-delay: calc(50s / 13 * (13 - 5) * -1);
+}
+
+.item26 {
+    animation-delay: calc(50s / 13 * (13 - 6) * -1);
+}
+
+.item27 {
+    animation-delay: calc(50s / 13 * (13 - 7) * -1);
+}
+
+.item28 {
+    animation-delay: calc(50s / 13 * (13 - 8) * -1);
+}
+
+.item29 {
+    animation-delay: calc(50s / 13 * (13 - 9) * -1);
+}
+
+.item300 {
+    animation-delay: calc(50s / 13 * (13 - 10) * -1);
+}
+
+.item301 {
+    animation-delay: calc(50s / 13 * (13 - 11) * -1);
+}
+
+.item302 {
+    animation-delay: calc(50s / 13 * (13 - 12) * -1);
+}
+
+.item303 {
+    animation-delay: calc(50s / 13 * (13 - 13) * -1);
+}
