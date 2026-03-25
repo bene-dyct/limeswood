@@ -26,6 +26,7 @@ export default function Hero() {
             className="w-full h-full object-cover"
           >
             <source src="https://ik.imagekit.io/myownImagekit/limeswood/electrical.webm" type="video/webm" />
+            <source src="https://ik.imagekit.io/sinamage/limeswood/electrical.mp4" type="video/mp4" />
           </video>
         </motion.div>
 

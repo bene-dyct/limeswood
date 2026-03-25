@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import Image from 'next/image';
 
 export default function Hero() {
   const ref = useRef(null)
@@ -34,8 +35,13 @@ export default function Hero() {
           <section ref={ref} className="relative h-[100vh] flex items-center justify-center overflow-hidden">
 <motion.div
         style={{ y }}
-        className="absolute inset-0 bg-[url('/homeheroimageone.jpg')] bg-cover bg-center"
       />
+      <Image
+      src="/homeheroone.webp"
+      alt='home'
+      fill
+      priority
+      className='absolute inset-0 bg-cover object-cover bg-center object-center'/>
 
       <div className="relative z-10 text-center max-w-5xl px-6">
         <motion.h1
@@ -63,15 +69,20 @@ export default function Hero() {
           <section ref={ref} className="relative h-[100vh] flex items-center justify-center overflow-hidden">
 <motion.div
         style={{ y }}
-        className="absolute inset-0 bg-[url('/homeheroimagetwoo.jpg')] bg-cover bg-center"
       />
+      <Image
+      src="/homeherotwo.webp"
+      alt='home'
+      fill
+      priority
+      className='absolute inset-0 bg-cover object-cover bg-center object-center'/>
 
       <div className="relative z-10 text-center max-w-5xl px-6">
         <motion.h1
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-light tracking-wide leading-tight text-white"
+          className="text-5xl md:text-7xl font-light tracking-wide leading-tight"
         >Integrated Engineering Systems
         </motion.h1>
 
@@ -79,7 +90,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="mt-6 text-lg  max-w-2xl mx-auto text-white"
+          className="mt-6 text-lg  max-w-2xl mx-auto"
         >Delivering multidisciplinary engineering solutions across automation, electrical, mechanical, and instrumentation systems.
         </motion.p>   
         </div>  
@@ -89,8 +100,13 @@ export default function Hero() {
           <section ref={ref} className="relative h-[100vh] flex items-center justify-center overflow-hidden">
 <motion.div
         style={{ y }}
-        className="absolute inset-0 bg-[url('/homeheroimagethree.jpg')] bg-cover bg-center"
       />
+      <Image
+      src="/homeherothree.webp"
+      alt='home'
+      fill
+      priority
+      className='absolute inset-0 bg-cover object-cover bg-center object-center'/>
 
       <div className="relative z-10 text-center max-w-5xl px-6">
         <motion.h1

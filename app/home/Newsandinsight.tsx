@@ -40,7 +40,7 @@ export default function Newsandinsight() {
           {newsandinsights.map((slide, index) => (
             <div key={index} className="overflow-hidden ">
               {/* Background Image */}
-              <div className="rounded-xl relative w-full md:w-[280px] h-[300px] md:h-[400px]">
+              <div className="rounded-xl relative w-full md:w-[280px] xl:w-[400px] h-[300px] md:h-[400px]">
                 <Image
                   src={slide.image}
                   alt={slide.title}

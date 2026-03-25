@@ -44,7 +44,7 @@ export default function ContactCards() {
               <div className="w-10 h-10 flex items-center justify-center bg-[#229bb3]/10 mx-auto text-[#229bb3] rounded-lg mb-4">
                 <Icon className="text-xl" />
               </div>
-              <p className="font-display  tracking-[0.2em] uppercase text-[#229bb3]/70 mb-1">
+              <p className="font-display tracking-[0.2em] uppercase text-[#229bb3]/70 mb-1">
                 {card.label}
               </p>
               <p className="font-body font-semibold text-[#357c8f]  leading-snug">

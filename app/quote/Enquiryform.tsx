@@ -315,7 +315,7 @@ export default function EnquiryForm() {
           </div>
         </div>
 
-        <section className="px-[6vw] mx-auto mt-24">
+        <section className="w-full mx-auto mt-24">
           <h2 className="font-display font-bold text-[clamp(28px,3.5vw,44px)] text-[#357c8f] mb-2">
             Visit Our Office
           </h2>
