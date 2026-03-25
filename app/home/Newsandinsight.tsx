@@ -35,12 +35,12 @@ export default function Newsandinsight() {
             delay: 0.5,
             damping: 20,
           }}
-          className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-6"
         >
           {newsandinsights.map((slide, index) => (
             <div key={index} className="overflow-hidden ">
               {/* Background Image */}
-              <div className="rounded-xl relative w-full md:w-[400px] h-[300px] md:h-[400px]">
+              <div className="rounded-xl relative w-full md:w-[280px] h-[300px] md:h-[400px]">
                 <Image
                   src={slide.image}
                   alt={slide.title}
@@ -49,8 +49,8 @@ export default function Newsandinsight() {
           rounded-xl
           object-cover
           transition-all duration-2000 ease-out
-          hover:translate-x-10
-          hover:blur-[1px]
+          hover:translate-x-5
+          hover:blur-[0.5px]
           hover:brightness-75
         "
                 />

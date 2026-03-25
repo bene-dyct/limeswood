@@ -5,7 +5,7 @@ export default function Whoweare() {
     <section className="p-5 md:p-10 mt-10">
       <div className="max-sm:flex-col-reverse w-full mx-auto lg:px-10 flex gap-12 items-center">
         {/* LEFT IMAGE */}
-        <div className="w-full sm:w-1/2 h-[300px] sm:h-[500px] rounded-xl overflow-hidden shadow-lg relative bg-red-400">
+        <div className="w-full sm:w-1/2 h-[300px] sm:h-[500px] rounded-xl overflow-hidden shadow-lg relative">
           <Image
             src="/engineerlady.jpg"
             alt="Industrial engineer lady"

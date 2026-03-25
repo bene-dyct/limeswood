@@ -8,7 +8,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-[#E9ECEF] text-[#3E5C6D]">
-      <div className="max-w-7xl mx-auto px-6 py-10">
+      <div className="w-full mx-auto px-6 md:px-15 lg:px-18 xl:px-20 py-10">
         {/* Top Grid */}
         <div className="grid md:grid-cols-3 gap-16">
           {/* Column 1 */}
