@@ -26,12 +26,12 @@ export const resources = [
   ]
 
   export const newsandinsights = [
-    { title: "The Future of Predictive Maintenance in Industrial Facilities", description: "Unplanned downtime remains one of the most expensive challenges in industrial operations. With advancements in predictive maintenance technologies, companies can now detect potential equipment failures before they occur.Using vibration analysis, thermal imaging, and sensor-driven diagnostics, mechanical systems can be monitored in real time. This reduces maintenance costs, extends equipment lifespan, and improves operational reliability.For engineering-driven organizations, predictive maintenance is no longer optional — it is a strategic advantage.", image: "/news1.jpg", link: "dsddj"},
-    { title: "Electrical System Reliability in High-Demand Environments", description: "Industrial electrical systems operate under intense load conditions, especially within oil & gas, manufacturing, and power generation facilities. Poor system design or irregular maintenance can lead to voltage instability, overheating, and costly shutdowns.Modern electrical engineering practices now emphasize load balancing, smart distribution systems, and energy-efficient components to ensure long-term stability.Reliability begins with proper system design — and is sustained through structured inspection and testing programs.", image: "/news2.jpg", link: "dsddj"},
-    { title: "Instrumentation and Control: The Backbone of Process Automation", description: "Instrumentation and control systems play a critical role in maintaining process accuracy and safety in industrial plants.From pressure transmitters and flow meters to distributed control systems (DCS), precise measurement and automated feedback loops ensure operational consistency.As industries adopt Industry 4.0 technologies, advanced instrumentation is enabling smarter decision-making, remote monitoring, and enhanced safety compliance.", image: "/news3.jpg", link: "dsddj"},
-    { title: "Energy Efficiency Strategies for Mechanical Systems", description: "Mechanical systems such as pumps, compressors, and HVAC units account for a significant portion of industrial energy consumption.Through proper alignment, condition monitoring, and optimized operating parameters, organizations can significantly reduce energy waste while improving system performance.Energy-efficient mechanical design is not only environmentally responsible — it also delivers measurable financial returns.", image: "/news4.jpg", link: "dsddj"},
-    { title: "The Role of Automation in Enhancing Industrial Safety", description: "Automation has transformed how industrial environments manage risk. Programmable logic controllers (PLCs), emergency shutdown systems, and safety interlocks help minimize human exposure to hazardous conditions.Well-designed automation systems ensure rapid response to abnormal conditions, reducing the likelihood of catastrophic failure.Investing in automation is ultimately an investment in workforce safety and operational continuity.", image: "/news5.jpg", link: "dsddj"},
-    { title: "Asset Integrity Management in Critical Infrastructure", description: "Asset integrity management ensures that physical assets such as pipelines, pressure vessels, and structural systems perform effectively throughout their lifecycle.Through inspection protocols, non-destructive testing (NDT), and risk-based assessments, organizations can prevent structural failure and maintain regulatory compliance.A proactive integrity strategy protects not only equipment — but also reputation and long-term operational stability.", image: "/news6.jpg", link: "dsddj"}
+    { title: "The Future of Predictive Maintenance in Industrial Facilities", description: "Unplanned downtime remains one of the most expensive challenges in industrial operations. With advancements in predictive maintenance technologies, companies can now detect potential equipment failures before they occur.Using vibration analysis, thermal imaging, and sensor-driven diagnostics, mechanical systems can be monitored in real time. This reduces maintenance costs, extends equipment lifespan, and improves operational reliability.For engineering-driven organizations, predictive maintenance is no longer optional — it is a strategic advantage.", image: "/news1.webp", link: "dsddj"},
+    { title: "Electrical System Reliability in High-Demand Environments", description: "Industrial electrical systems operate under intense load conditions, especially within oil & gas, manufacturing, and power generation facilities. Poor system design or irregular maintenance can lead to voltage instability, overheating, and costly shutdowns.Modern electrical engineering practices now emphasize load balancing, smart distribution systems, and energy-efficient components to ensure long-term stability.Reliability begins with proper system design — and is sustained through structured inspection and testing programs.", image: "/news2.webp", link: "dsddj"},
+    { title: "Instrumentation and Control: The Backbone of Process Automation", description: "Instrumentation and control systems play a critical role in maintaining process accuracy and safety in industrial plants.From pressure transmitters and flow meters to distributed control systems (DCS), precise measurement and automated feedback loops ensure operational consistency.As industries adopt Industry 4.0 technologies, advanced instrumentation is enabling smarter decision-making, remote monitoring, and enhanced safety compliance.", image: "/news3.webp", link: "dsddj"},
+    { title: "Energy Efficiency Strategies for Mechanical Systems", description: "Mechanical systems such as pumps, compressors, and HVAC units account for a significant portion of industrial energy consumption.Through proper alignment, condition monitoring, and optimized operating parameters, organizations can significantly reduce energy waste while improving system performance.Energy-efficient mechanical design is not only environmentally responsible — it also delivers measurable financial returns.", image: "/news4.webp", link: "dsddj"},
+    { title: "The Role of Automation in Enhancing Industrial Safety", description: "Automation has transformed how industrial environments manage risk. Programmable logic controllers (PLCs), emergency shutdown systems, and safety interlocks help minimize human exposure to hazardous conditions.Well-designed automation systems ensure rapid response to abnormal conditions, reducing the likelihood of catastrophic failure.Investing in automation is ultimately an investment in workforce safety and operational continuity.", image: "/news5.webp", link: "dsddj"},
+    { title: "Asset Integrity Management in Critical Infrastructure", description: "Asset integrity management ensures that physical assets such as pipelines, pressure vessels, and structural systems perform effectively throughout their lifecycle.Through inspection protocols, non-destructive testing (NDT), and risk-based assessments, organizations can prevent structural failure and maintain regulatory compliance.A proactive integrity strategy protects not only equipment — but also reputation and long-term operational stability.", image: "/news6.webp", link: "dsddj"}
     
   ]
 
@@ -57,7 +57,7 @@ export const resources = [
   {
     name: "MR B",
     role: "XXXXXXXXX",
-    role1: "CO-FOUNDER",
+    role1: "MANAGER 1",
     img: "/avatar.png",
     fb: "",
     x: "",
@@ -67,7 +67,7 @@ export const resources = [
   {
     name: "MRS C",
     role: "XXXXXXXXX",
-    role1: "CO-FOUNDER",
+    role1: "MANAGER 2",
     img: "/avatar.png",
     fb: "",
     x: "",
@@ -77,7 +77,7 @@ export const resources = [
   {
     name: "MR D",
     role: "XXXXXXXXX",
-    role1: "CLEANING TEAM",
+    role1: "MANAGER 3",
     img: "/avatar.png",
     fb: "",
     x: "",

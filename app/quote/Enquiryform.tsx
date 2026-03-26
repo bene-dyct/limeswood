@@ -192,7 +192,7 @@ export default function EnquiryForm() {
 
             <SectionLabel>Project Enquiry Form</SectionLabel>
 
-            <h2 className="font-display font-bold text-[clamp(28px,3.5vw,44px)] text-[#357c8f] mb-2">
+            <h2 className="font-display font-bold text-[clamp(22px,3.5vw,44px)] text-[#357c8f] mb-2">
               Tell Us About Your Requirements
             </h2>
 
