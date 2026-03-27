@@ -409,12 +409,12 @@ export default function Navbar() {
             
           >
             <Image
-              src="/limeswoodlogowhite.png"
+              src="/LIMESWOOD-LOGO-.png"
               alt="Limeswood International"
               width={60}
               height={60}
               priority
-              className="h-15 w-15 object-contain"
+              className="h-13 md:h-15 w-15 object-contain"
             />
           </Link>
 
