@@ -6,6 +6,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import WhatsAppBubble from "./components/WhatsAppBubble";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -44,6 +46,9 @@ export default function RootLayout({
         <main className="bg-slate-50">{children}</main>
         <WhatsAppBubble />
         <Footer/>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
